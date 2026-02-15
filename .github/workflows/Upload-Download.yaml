@@ -1,0 +1,12 @@
+name: upload-download example
+on :
+    workflow_dispatch:
+jobs:
+    example:
+        runs-on: ubuntu-latest
+        steps:
+          - name: upload example
+            run: echo "hi"
+
+
+ 
