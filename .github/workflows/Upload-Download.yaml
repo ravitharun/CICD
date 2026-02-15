@@ -1,12 +1,14 @@
 name: upload-download example
 on :
     workflow_dispatch:
+env:
+    filename: Data.txt
 jobs:
     example:
         runs-on: ubuntu-latest
         steps:
           - name: upload example
-            run: echo "hi">data.txt
+            run: echo "hi">$filename
           - name: upload example
             uses: actions/upload-artifact@v4
             with:
@@ -23,7 +25,7 @@ jobs:
              with:
                 name: dataFile
           -  name: Show file content
-             run: cat data.txt
+             run: cat $filename
 
 
 
