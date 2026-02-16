@@ -32,3 +32,14 @@ jobs:
               run: echo "hi  job is running "
             - name: check the job is running
               run: echo "hi  job is running "
+    JBname2:
+        runs-on: ubuntu-latest
+        steps:
+            - name: check the job is running
+              run: echo "hi  job is running "
+            - name: check the job is running
+              run: echo "hi  job is running "
+            - name: check the job is running
+              run: echo "hi  job is running "
+            - name: check the job is running
+              run: echo "hi  job is running "
