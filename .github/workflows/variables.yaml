@@ -6,8 +6,12 @@ jobs:
      runs-on: ubuntu-latest
 
      steps:
+     
+
        - name: smaple runnering
-         run: echo 'hi i am sample runnering'
+         env:
+            CITY : Delhi
+         run: echo "HI $CITY"
        - name: smaple runnering2
          run: echo 'hi i am sample runnering2'
          
