@@ -5,8 +5,7 @@ name: events-trigger-example
 #           - main
 on:
     pull_request:
-        branches:
-          - main
+    
 jobs:
     JBname:
         runs-on: ubuntu-latest
