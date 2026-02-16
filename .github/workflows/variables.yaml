@@ -33,7 +33,7 @@ jobs:
       - name: JOb level variable checking
         run: echo "Job level variable checking"
       - name: JOb level variable checking
-        run: echo "Job level variable $CITY"
+        run: echo "Job level variable $City"
 
 
 
