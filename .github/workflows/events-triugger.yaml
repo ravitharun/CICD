@@ -3,12 +3,17 @@ name: events-trigger-example
 #     push:
 #         branches:
 #           - main
+# on:
+#     pull_request:
+#           branches:
+#               - main
+    
 on:
-    pull_request:
-          branches:
-              - main
-    
-    
+  workflow_dispatch:
+    inputs:
+      username:
+        description: "Enter name"
+        required: true
 jobs:
     JBname:
         runs-on: ubuntu-latest
