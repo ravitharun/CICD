@@ -2,11 +2,9 @@ name: variables example
 on :
  workflow_dispatch:
 jobs:
-  Varaibles_example :
+  Varaibles_example_stepLevel :
      runs-on: ubuntu-latest
-
      steps:
-     
 
        - name: smaple runnering
          env:
@@ -14,6 +12,20 @@ jobs:
          run: echo "HI $CITY"
        - name: smaple runnering2
          run: echo 'hi i am sample runnering2'
+  variables_example_JobLevel:
+    
+        runs-on: ubuntu-latest
+        env:
+          CITY: Dubai
+        steps:
+          - name: runner smaple job level variable cheking
+            run: echo "runner smaple job level variable cheking"
+          - name: runner smaple check job level variable 
+            run: echo "Hi $CITY"
+
+
+
+  
          
        
   
