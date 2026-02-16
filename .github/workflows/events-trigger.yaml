@@ -18,8 +18,12 @@ name: events-trigger-example
 #         description: "Enter email"
 #         required: true
 on:
-    schedule:
-        - cron: "* * * * *"
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  schedule:
+    - cron: "* * * * *"
 jobs:
     JBname:
         runs-on: ubuntu-latest
