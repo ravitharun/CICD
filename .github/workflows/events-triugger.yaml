@@ -14,6 +14,9 @@ on:
       username:
         description: "Enter name"
         required: true
+      useremail:
+        description: "Enter email"
+        required: true
 jobs:
     JBname:
         runs-on: ubuntu-latest
