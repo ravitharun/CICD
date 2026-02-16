@@ -1,0 +1,28 @@
+name: events-trigger-example
+# on:
+#     push:
+#         branches:
+#           - main
+# on:
+#     pull_request:
+#           branches:
+#               - main
+
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       username:
+#         description: "Enter name"
+#         required: true
+#       useremail:
+#         description: "Enter email"
+#         required: true
+on:
+    schedule:
+        - cron: "* * * * *"
+jobs:
+    JBname:
+        runs-on: ubuntu-latest
+        steps:
+            - name: check the job is running
+              run: echo "hi  job is running "
